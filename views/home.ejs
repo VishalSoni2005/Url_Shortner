@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Url Shortner</title>
+</head>
+<body>
+     <h1>URL Shortner</h1>
+
+    <ul>
+        <% urls.forEach(url => { %>
+            <li><a href="<%= url.redirectUrl %>"><%= url.shortId %></a> => for <h3><%= url.redirectUrl %></h3> and visited <%= url.visitHistory.length %> times</li>
+        <% }); %>
+    </ul>
+</body>
+</html>

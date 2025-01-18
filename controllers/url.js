@@ -23,7 +23,7 @@ async function handleGenerateNewShortUrl(req, res) {
   } catch (err) {
     console.error('Error creating short URL:', err);
     return res.status(500).json({ error: 'Internal Server Error hai bhai' });
-  }
+  }Markdown; Markdown; 
 }
 
 //* Handle redirects
